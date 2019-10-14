@@ -1,26 +1,28 @@
-function pets () {
-  //var admissions = parseInt($("#admissions").val());
-  var animal =  parseInt($("#animal").val());
-  //var food = parseInt($("#food").val());
-  var total = animal;
-  if (total === 2){
-     $('#hidden','#mufasa').show();
-     $('#panther','#rabbit', '#cheetah').hide();
-     console.log(2);
-  }else if (total === 4){
-     $('#hidden');
-  }else if (total === 6){
-     $('#hidden');
-  }else if(total === 8){
-     $('#hidden');
-  }
-  return
-}
 $(document).ready(function(){
   $("#pets").submit(function(){
-     event.preventDefault();
+    event.preventDefault();
+    function pets () {
+      //var admissions = parseInt($("#admissions").val());
+      var animal =  $("#animal").val();
 
-pets();
+      //var food = parseInt($("#food").val());
+      var total = animal;
+      console.log(total);
+      if (total == 2){
+         $('.mufasa').show();
+         $('.panther','.rabbit', '.cheetah').hide();
+      } else if (total == 4){
+        $('.panther').show();
+        $('.cheetah','.rabbit','.mufasa').hide();
+      } else if (total == 6){
+         $('#hidden');
+      } else {
+         $('#hidden');
+      }
+      return
+    }
+
+    pets();
 
   });
 
