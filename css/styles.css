@@ -4,7 +4,9 @@ body {
   background-size: contain;
 }
 
-
+label {
+  background-color: white;
+}
 img {
   height: 150px;
   width: 150px;
@@ -18,13 +20,16 @@ ul {
 
 }
 
+
+
+
 h1 {
   text-align: center;
-  color: beige;
+  color: BLACK;
 }
 
-p {
-
+#hidden {
+  display: none;
 }
 
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
@@ -67,14 +72,15 @@ p {
 
 /* Style the back side */
 .flip-card-back {
-  background-color: beige ;
+  background-color: white ;
   color: black;
   transform: rotateY(180deg);
   overflow: scroll;
 }
 
-.container {
+.jumbotron {
   display: flex;
+  background-color: black;
 
 
 }
