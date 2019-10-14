@@ -1,12 +1,13 @@
 body {
-  background: url('../img/zoo.gif');
+background-color: #00086e;
 
 
 
 }
 
 label {
-  background-color: white;
+  font-family: sans-serif;
+  color: dodgerblue;
 }
 img {
   height: 150px;
