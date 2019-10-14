@@ -10,14 +10,24 @@ $(document).ready(function(){
       console.log(total);
       if (total == 2){
          $('.mufasa').show();
-         $('.panther','.rabbit', '.cheetah').hide();
+         $('.rabbit').hide();
+         $('.cheetah').hide();
+         $('.panther').hide();
       } else if (total == 4){
         $('.panther').show();
-        $('.cheetah','.rabbit','.mufasa').hide();
+        $('.mufasa').hide();
+        $('.rabbit').hide();
+        $('.cheetah').hide();
       } else if (total == 6){
-         $('#hidden');
+        $('.rabbit').show();
+        $('.panther').hide();
+        $('.mufasa').hide();
+        $('.cheetah').hide();
       } else {
-         $('#hidden');
+        $('.cheetah').show();
+        $('.panther').hide();
+        $('.mufasa').hide();
+        $('.rabbit').hide();
       }
       return
     }
