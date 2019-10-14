@@ -1,7 +1,8 @@
 body {
-  background-color: black;
-  background: url('../img/wall.jpg');
-  background-size: contain;
+  background: url('../img/zoo.gif');
+
+
+
 }
 
 label {
@@ -91,8 +92,9 @@ h1 {
 }
 
 .jumbotron {
+
   display: flex;
-  background-color: black;
+  background-color: transparent;
 
 
 }
