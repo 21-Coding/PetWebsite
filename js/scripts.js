@@ -4,21 +4,24 @@ function pets () {
   //var food = parseInt($("#food").val());
   var total = animal;
   if (total === 2){
-    return $('#hidden')
+     $('#hidden','#mufasa').show();
+     $('#panther','#rabbit', '#cheetah').hide();
+     console.log(2);
   }else if (total === 4){
-    return $('#hidden')
+     $('#hidden');
   }else if (total === 6){
-    return $('#hidden')
-  }else{
-    return $('#hidden')
+     $('#hidden');
+  }else if(total === 8){
+     $('#hidden');
   }
+  return
 }
 $(document).ready(function(){
   $("#pets").submit(function(){
      event.preventDefault();
 
-
+pets();
 
   });
-  console.log(pets());
+
 });
